@@ -18,6 +18,6 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg'
   gem 'rspec-rails', '~> 2.8.1'
 end
