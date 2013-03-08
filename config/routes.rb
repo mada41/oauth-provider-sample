@@ -7,6 +7,9 @@ DoorkeeperProvider::Application.routes.draw do
     namespace :v1 do
       resources :profiles
       resources :users
+      namespace :principals do
+        get "list"
+      end
       get '/me' => "credentials#me"
       get '/fast' => 'fast#index'
     end

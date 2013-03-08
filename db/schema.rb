@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120526121506) do
+ActiveRecord::Schema.define(:version => 20130308091336) do
 
   create_table "oauth_access_grants", :force => true do |t|
     t.integer  "resource_owner_id", :null => false
@@ -51,6 +51,13 @@ ActiveRecord::Schema.define(:version => 20120526121506) do
   end
 
   add_index "oauth_applications", ["uid"], :name => "index_oauth_applications_on_uid", :unique => true
+
+  create_table "principals", :force => true do |t|
+    t.string   "name"
+    t.string   "supplier_guid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "profiles", :force => true do |t|
     t.string   "name"

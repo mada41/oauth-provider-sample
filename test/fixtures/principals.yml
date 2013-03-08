@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  supplier_guid: MyString
+
+two:
+  name: MyString
+  supplier_guid: MyString
